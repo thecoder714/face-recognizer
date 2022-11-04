@@ -1,0 +1,45 @@
+<!--https://teachablemachine.withgoogle.com/models/oWswft5wU/-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    
+  <link rel="stylesheet" href="style.css"/>
+  <script src="main.js"></script>
+
+  <title>Face Recognition Web</title>
+</head>
+<center>
+  <h3 class="heading">Face Recognition Web Version</h3>
+  <br><br>
+  <p class="name-of-people">
+    <p>Me</p>
+    <hr>
+    <p>Mom</p>
+    <hr>
+  </p>
+
+  <label>Webcam View</label>
+  <div id="camera"></div>
+  <br><br>
+  <div id="result"></div>
+  <br><br>
+  <button onclick="takeSnapshot()" class="btn btn-info">Take snapshot</button>
+  <br><br>
+  <button onclick="check()" class="btn btn-warning">Identify</button>
+
+  <p style="font-size:22px;"><span id="result-object-name"></span></p>
+  <p style="font-size:22px;"><span id="accuracy"></span></p>
+</center>
+</body>
+
+</html>
